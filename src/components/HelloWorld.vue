@@ -1,6 +1,6 @@
 <template>
   <v-container class="fill-height">
-    Hello?
+
     <v-data-table
     :items="items" 
     :headers="headers"
@@ -77,7 +77,7 @@
 
 <script setup>
 
-import { VDataTable } from 'vuetify/components/VDataTable';
+import { VDataTable, VDataTableFooter, VDataTableServer } from 'vuetify/components/VDataTable';
 
 const headers = [
     { title: 'Pyramid', value: 'name' },

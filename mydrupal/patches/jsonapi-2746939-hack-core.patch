@@ -1,0 +1,14 @@
+diff --git a/modules/jsonapi/src/ResourceType/ResourceType.php b/modules/jsonapi/src/ResourceType/ResourceType.php
+index 24a8835..bd56cb1 100644
+--- a/modules/jsonapi/src/ResourceType/ResourceType.php
++++ b/modules/jsonapi/src/ResourceType/ResourceType.php
+@@ -227,7 +227,8 @@ class ResourceType {
+    */
+   public function includeCount() {
+     // By default, do not return counts in collection queries.
+-    return FALSE;
++    // return FALSE;
++    return TRUE; // Demo HACK.
+   }
+ 
+   /**

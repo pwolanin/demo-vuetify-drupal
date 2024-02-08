@@ -21,7 +21,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
   field_contact_address:
     type: string
@@ -29,7 +29,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 2
     region: content
   field_first_name:
     type: string
@@ -37,7 +37,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
   field_last_name:
     type: string
@@ -45,11 +45,11 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 4
     region: content
 hidden: {  }

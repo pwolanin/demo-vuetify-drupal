@@ -1,10 +1,17 @@
 <template>
   <v-container class="fill-height">
 
-    <v-data-table
-    :items="items" 
+    <v-data-table-server
+    v-model:items-per-page="itemsPerPage"
+    :search="search"
     :headers="headers"
-    ></v-data-table>
+    :items-length="totalItems"
+    :items="serverItems"
+    :loading="loading"
+    item-value="name"
+    @update:options="loadItems"
+  ></v-data-table-server>
+
     <v-responsive class="align-center text-center fill-height">
       <v-img height="100" src="@/assets/logo.svg" />
 
@@ -75,66 +82,71 @@
   </v-container>
 </template>
 
-<script setup>
+<script>
 
 import { VDataTable, VDataTableFooter, VDataTableServer } from 'vuetify/components/VDataTable';
+import axios from "axios";
+import { Jsona } from 'jsona';
 
-const headers = [
-    { title: 'Pyramid', value: 'name' },
-    { title: 'Location', value: 'location' },
-    { title: 'Construction Date', value: 'constructionDate' },
-    {
-      title: 'Dimensions',
-      align: 'center',
-      children: [
-        { title: 'Height (m)', value: 'height' },
-        { title: 'Base (m)', value: 'base' },
-        { title: 'Volume (m³)', value: 'volume' },
+// You would normally import some config to set this.
+const baseUrl = 'http://localhost:8888';
+
+const jsonapiRequest = axios.create({
+  baseURL: config.baseUrl + "/jsonapi",
+  headers: {
+    ...defaults.headers,
+    "Content-Type": "application/vnd.api+json",
+  },
+});
+
+jsonapiRequest.interceptors.response.use((response) => {
+  if (response.data?.data) {
+    dataFormatter = new Jsona();
+    response.data.deserialized = dataFormatter.deserialize(response.data);
+  }
+  return response;
+});
+
+const JsonAPI  = {
+  async fetch ({ page, itemsPerPage, sortBy, search }) {
+    const queries = {};
+    return jsonapiRequest.get('node/contact', { params: queries });
+  }
+};
+
+  export default {
+    data: () => ({
+      itemsPerPage: 25,
+      headers: [
+        { title: 'First Name', key: 'field_first_name', align: 'end' },
+        { title: 'Last Name', key: 'field_last_name', align: 'end' },
+        { title: 'Address', key: 'field_contact_address', align: 'end' },
       ],
+      serverItems: [],
+      loading: true,
+      totalItems: 0,
+      name: '',
+      calories: '',
+      search: '',
+    }),
+    watch: {
+      name () {
+        this.search = String(Date.now())
+      },
+      calories () {
+        this.search = String(Date.now())
+      },
     },
-  ]
-
-  const items = [
-    {
-      name: 'Great Pyramid of Giza',
-      location: 'Egypt',
-      height: '146.6',
-      base: '230.4',
-      volume: '2583285',
-      constructionDate: 'c. 2580–2560 BC',
+    methods: {
+      loadItems ({ page, itemsPerPage, sortBy }) {
+        this.loading = true
+        JsonAPI.fetch({ page, itemsPerPage, sortBy, search: { name: this.name, calories: this.calories } }).then((response) => {
+          console.log(response);
+          this.serverItems = items
+          this.totalItems = total
+          this.loading = false
+        })
+      },
     },
-    {
-      name: 'Pyramid of Khafre',
-      location: 'Egypt',
-      height: '136.4',
-      base: '215.3',
-      volume: '1477485',
-      constructionDate: 'c. 2570 BC',
-    },
-    {
-      name: 'Red Pyramid',
-      location: 'Egypt',
-      height: '104',
-      base: '220',
-      volume: '1602895',
-      constructionDate: 'c. 2590 BC',
-    },
-    {
-      name: 'Bent Pyramid',
-      location: 'Egypt',
-      height: '101.1',
-      base: '188.6',
-      volume: '1200690',
-      constructionDate: 'c. 2600 BC',
-    },
-    {
-      name: 'Pyramid of the Sun',
-      location: 'Mexico',
-      height: '65',
-      base: '225',
-      volume: '1237097',
-      constructionDate: 'c. 200 CE',
-    },
-  ]
-  //
+  }
 </script>

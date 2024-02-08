@@ -24,6 +24,7 @@ install:
   - views
   - views_ui
   - automated_cron
+  - jsonapi
   - my_module
 themes:
   - olivero

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 34caf456-2a9d-491b-aa85-f937589c9b9d
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Christopher Krohn'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '854 S Swanson St, Philadelphia, PA 19147'
+  field_first_name:
+    -
+      value: Christopher
+  field_last_name:
+    -
+      value: Krohn

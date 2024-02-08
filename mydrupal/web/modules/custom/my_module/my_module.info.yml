@@ -1,0 +1,7 @@
+name: 'My Module'
+type: module
+description: 'Demo module'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - default_content:default_content

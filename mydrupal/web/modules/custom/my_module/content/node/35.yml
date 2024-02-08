@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c2e635f0-0318-4df4-900a-dcb6270bcbe8
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Anthony Pereira'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '1901 John F Kennedy Blv, Philadelphia, PA 19103'
+  field_first_name:
+    -
+      value: Anthony
+  field_last_name:
+    -
+      value: Pereira

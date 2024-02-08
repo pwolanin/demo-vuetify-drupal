@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0b492693-6e16-41e9-8ec1-47afb23581c3
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Max Morrissey'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '1331 N 55Th St, Philadelphia, PA 19131'
+  field_first_name:
+    -
+      value: Max
+  field_last_name:
+    -
+      value: Morrissey

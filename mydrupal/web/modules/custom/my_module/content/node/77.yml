@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 41ae4c01-c601-4925-a9ef-70c655768af3
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dartanya Carrico'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '2510 S 9Th St, Philadelphia, PA 19148'
+  field_first_name:
+    -
+      value: Dartanya
+  field_last_name:
+    -
+      value: Carrico

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f714a2e6-ef10-4f97-ba29-5da087a0ca51
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ishara Rosenthal'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '3804 Poplar St, Philadelphia, PA 19104'
+  field_first_name:
+    -
+      value: Ishara
+  field_last_name:
+    -
+      value: Rosenthal

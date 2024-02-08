@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9f003785-eaa9-45c2-83d3-7cd6b43f574f
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Stephen Lebron Pacheco'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '1318 Grant Ave, Philadelphia, PA 19115'
+  field_first_name:
+    -
+      value: Stephen
+  field_last_name:
+    -
+      value: 'Lebron Pacheco'

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9867efa9-d6a5-4670-ac10-440d9e1fbdfd
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Marcus Van Ravenstein'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '2817 S 12Th St, Philadelphia, PA 19148'
+  field_first_name:
+    -
+      value: Marcus
+  field_last_name:
+    -
+      value: 'Van Ravenstein'

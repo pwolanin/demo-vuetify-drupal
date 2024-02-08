@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b45a25be-c58a-4e47-853f-0100d7929fc1
+  bundle: contact
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ian Rodriguez Berrios'
+  created:
+    -
+      value: 1707359321
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_contact_address:
+    -
+      value: '3135 Belgreen Rd, Philadelphia, PA 19154'
+  field_first_name:
+    -
+      value: Ian
+  field_last_name:
+    -
+      value: 'Rodriguez Berrios'

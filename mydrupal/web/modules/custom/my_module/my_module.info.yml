@@ -4,4 +4,7 @@ description: 'Demo module'
 package: Custom
 core_version_requirement: ^10
 dependencies:
+  - node
+  - field
+  - text
   - default_content:default_content

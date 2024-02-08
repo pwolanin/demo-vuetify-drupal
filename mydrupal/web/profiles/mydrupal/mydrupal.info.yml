@@ -1,0 +1,30 @@
+name: My Drupal
+type: profile
+description: 'Install with commonly used features pre-configured.'
+core_version_requirement: ^10
+install:
+  - node
+  - block
+  - breakpoint
+  - ckeditor5
+  - config
+  - datetime
+  - editor
+  - help
+  - image
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - dblog
+  - toolbar
+  - taxonomy
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - automated_cron
+  - my_module
+themes:
+  - olivero
+  - claro

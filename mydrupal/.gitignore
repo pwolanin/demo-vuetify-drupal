@@ -1,0 +1,6 @@
+/vendor/
+web/core/
+web/modules/contrib/
+.ht*
+sites/*/files
+

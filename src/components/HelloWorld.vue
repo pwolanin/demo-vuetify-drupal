@@ -149,6 +149,7 @@ const JsonAPI  = {
         { title: 'First Name', key: 'field_first_name', align: 'end' },
         { title: 'Last Name', key: 'field_last_name', align: 'end' },
         { title: 'Address', key: 'field_contact_address', align: 'end' },
+        { title: 'Dessert', key: 'field_favorite_dessert', align: 'end' },
       ],
       serverItems: [],
       loading: true,

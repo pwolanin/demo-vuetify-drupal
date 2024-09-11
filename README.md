@@ -2,11 +2,14 @@
 
 You need node >= 18 and PHP >= 8.1
 
-You'll also need npm and composer sintalled in advance.
+You'll also need npm and composer installed in advance.
+
+For this example I set up a Vue application and Drupal and
+connected them together.
 
 # Vuetify 
 
-Installed using npm:
+I installed using npm:
 https://github.com/vuetifyjs/create-vuetify
 
 ```
@@ -17,11 +20,16 @@ This is the official scaffolding tool for Vuetify.
 
 # Drupal
 
-This is the offical Drupal scaffold for new projects.
+I created a new codebase using composer:
 
 ```
 composer create-project drupal/recommended-project mydrupal
 ```
+
+This is the offical Drupal scaffold for new projects.
+
+
+# How to Install the Demo
 
 ## First terminal: npm
 
@@ -42,7 +50,7 @@ and do a composer install:
  composer install
 ```
 
-If that went we, install Drupal with drush from the web dir:
+If that went well, install Drupal with drush from the web dir:
 
 ```
 cd web
@@ -55,7 +63,7 @@ Now you can run a php local webserver:
 php -S localhost:8888 .ht.router.php
 ```
 
-You can log in to Drupal at
+You can log in to Drupal at  http://localhost:8888
 
 
 ## First terminal: npm

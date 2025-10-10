@@ -286,7 +286,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'rffQRCgQjOlbFb8CjiyjSw-afw2lx8QdoAGD3y5n7uQaeUgF39n1C7ZTKRu4pshxG4PjcwqRUQ';
+$settings['hash_salt'] = '7GJKEwBmnKsGXeMzUQRRIZW0ynPM0uEGws9pLpXZ0B1alFx94LXelPu5V2W4JpRh3-rRoUwAaQ';
 
 /**
  * Deployment identifier.
@@ -896,3 +896,12 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\sqlite\\Driver\\Database\\sqlite',
   'autoload' => 'core/modules/sqlite/src/Driver/Database/sqlite/',
 );
+$databases['default']['default'] = array (
+  'database' => 'sites/default/files/.ht.sqlite',
+  'prefix' => '',
+  'driver' => 'sqlite',
+  'namespace' => 'Drupal\\sqlite\\Driver\\Database\\sqlite',
+  'autoload' => 'core/modules/sqlite/src/Driver/Database/sqlite/',
+);
+
+$settings['state_cache'] = TRUE;

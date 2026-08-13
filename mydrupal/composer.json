@@ -17,11 +17,11 @@
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "~10.2",
-        "drupal/core-project-message": "~10.2",
-        "drupal/core-recommended": "~10.2",
+        "drupal/core-composer-scaffold": "^11.4",
+        "drupal/core-project-message": "^11.4",
+        "drupal/core-recommended": "^11.4",
         "drupal/default_content": "^2.0@alpha",
-        "drush/drush": "^12.4"
+        "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -31,12 +31,13 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
-            "cweagans/composer-patches": true
+            "phpstan/extension-installer": true,
+            "symfony/runtime": false
         },
         "sort-packages": true
     },
